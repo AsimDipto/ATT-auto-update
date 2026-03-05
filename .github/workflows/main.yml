@@ -29,6 +29,7 @@ jobs:
       - name: Extract Script
         run: |
           mkdir -p tmp_yt
+          # Passwork secret theke nibe
           7z x at.zip -p"${{ secrets.ATT_ZIP_PASSWORD }}" -y -otmp_yt
 
       - name: Run Python Script
